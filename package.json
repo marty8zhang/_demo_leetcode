@@ -1,0 +1,17 @@
+{
+  "name": "demo_leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Marty Zhang <marty8zhang@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "jest": "^27.0.6"
+  }
+}
