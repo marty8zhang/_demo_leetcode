@@ -8,7 +8,7 @@ module.exports = {
     es2021: true,
     'jest/globals': true,
   },
-  plugins: ['jest'],
+  plugins: ['jest', 'simple-import-sort'],
   extends: ['airbnb-base', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 12,
@@ -16,5 +16,7 @@ module.exports = {
   },
   rules: {
     'import/extensions': ['error', 'ignorePackages'],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
 };
