@@ -1,21 +1,5 @@
-function ListNode(val, next) {
-  this.val = (val === undefined ? 0 : val);
-  this.next = (next === undefined ? null : next);
-}
+import ListNode from './list-node.js';
 
-/**
- * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
- */
-/**
- * @param {ListNode} l1
- * @param {ListNode} l2
- * @param args
- * @return {ListNode}
- */
 function addTwoNumbers(l1, l2, ...args) {
   const [prevNode] = args;
   const sum = (l1?.val ?? 0) + (l2?.val ?? 0) + (prevNode?.next?.val ?? 0);
@@ -49,6 +33,8 @@ function addTwoNumbers(l1, l2, ...args) {
   if (!prevNode) {
     return node;
   }
+
+  return null;
 }
 
-export { ListNode, addTwoNumbers };
+export { addTwoNumbers as default };

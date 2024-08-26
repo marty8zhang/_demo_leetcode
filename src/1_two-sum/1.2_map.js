@@ -1,8 +1,3 @@
-/*
- * https://leetcode.com/problems/two-sum/description/
- * Given an array of integers `nums` and an integer `target`, return indices of the two numbers such
- * that they add up to `target`.
- */
 function twoSum(nums, target) {
   const map = new Map();
 
@@ -15,7 +10,7 @@ function twoSum(nums, target) {
     map.set(nums[i], i);
   }
 
-  throw new Error('The given array of integers cannot add up to the target.');
+  return null;
 }
 
 export { twoSum as default };

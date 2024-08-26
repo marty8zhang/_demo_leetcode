@@ -1,22 +1,16 @@
 import twoSum from './1.2_map.js';
 
 describe('twoSum()', () => {
-  it('should throw an error for an empty array', () => {
-    expect(() => twoSum([], 7)).toThrow(
-      'The given array of integers cannot add up to the target.',
-    );
+  it('should return `null` for an empty array', () => {
+    expect(twoSum([], 7)).toBeNull();
   });
 
-  it('should throw an error for an array of one integer', () => {
-    expect(() => twoSum([7], 7)).toThrow(
-      'The given array of integers cannot add up to the target.',
-    );
+  it('should return `null` for an array of one integer', () => {
+    expect(twoSum([7], 7)).toBeNull();
   });
 
-  it('should throw an array which has no matches with the given target', () => {
-    expect(() => twoSum([1, 2, 3], 6)).toThrow(
-      'The given array of integers cannot add up to the target.',
-    );
+  it('should return `null` which has no matches with the given target', () => {
+    expect(twoSum([1, 2, 3], 6)).toBeNull();
   });
 
   it('should work for an array of two integers', () => {
