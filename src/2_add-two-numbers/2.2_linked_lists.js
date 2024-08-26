@@ -37,4 +37,4 @@ function addTwoNumbers(l1, l2, ...args) {
   return null;
 }
 
-export { addTwoNumbers as default };
+export default addTwoNumbers;

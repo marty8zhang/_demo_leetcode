@@ -13,4 +13,4 @@ function twoSum(nums, target) {
   return null;
 }
 
-export { twoSum as default };
+export default twoSum;

@@ -4,4 +4,4 @@ function ListNode(val, next) {
   this.next = (next === undefined ? null : next);
 }
 
-export { ListNode as default };
+export default ListNode;

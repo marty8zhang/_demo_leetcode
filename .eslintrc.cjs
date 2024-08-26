@@ -1,6 +1,6 @@
 /*
- * It appears this file must be kept in the deprecated `.eslintrc.cjs` (and CommonJS) format in
- * order for it to be picked up by both the CLI and the JetBrains IDE.
+ * At the time of written, some of the ESLint plugins aren't supporting ESLint v9 yet, which
+ * resulted in this deprecated configuration file format is being used.
  */
 module.exports = {
   env: {
