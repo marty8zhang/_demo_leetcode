@@ -1,4 +1,4 @@
-import twoSum from './1_two-sum';
+import twoSum from './1.2_map.js';
 
 describe('twoSum()', () => {
   it('should throw an error for an empty array', () => {

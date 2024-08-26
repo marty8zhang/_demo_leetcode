@@ -1,4 +1,4 @@
-import {addTwoNumbers, ListNode} from './2_add-two-numbers_linked_lists.js';
+import { addTwoNumbers, ListNode } from './2.2_linked_lists.js';
 
 describe('addTwoNumbers()', () => {
   it('works with 3 digits calculation', () => {

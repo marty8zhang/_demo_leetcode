@@ -1,4 +1,4 @@
-export function ListNode(val, next) {
+function ListNode(val, next) {
   this.val = (val === undefined ? 0 : val);
   this.next = (next === undefined ? null : next);
 }
@@ -16,7 +16,7 @@ export function ListNode(val, next) {
  * @param args
  * @return {ListNode}
  */
-export const addTwoNumbers = function (l1, l2, ...args) {
+function addTwoNumbers(l1, l2, ...args) {
   const [prevNode] = args;
   const sum = (l1?.val ?? 0) + (l2?.val ?? 0) + (prevNode?.next?.val ?? 0);
   const l1Next = l1?.next ?? null;
@@ -24,7 +24,7 @@ export const addTwoNumbers = function (l1, l2, ...args) {
 
   if (sum === 0 && l1Next === null && l2Next === null) {
     if (prevNode) {
-      return;
+      return null;
     }
 
     return new ListNode(sum);
@@ -49,4 +49,6 @@ export const addTwoNumbers = function (l1, l2, ...args) {
   if (!prevNode) {
     return node;
   }
-};
+}
+
+export { ListNode, addTwoNumbers };

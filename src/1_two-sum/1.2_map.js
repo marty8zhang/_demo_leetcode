@@ -3,7 +3,7 @@
  * Given an array of integers `nums` and an integer `target`, return indices of the two numbers such
  * that they add up to `target`.
  */
-export default function twoSum(nums, target) {
+function twoSum(nums, target) {
   const map = new Map();
 
   for (let i = 0; i < nums.length; i += 1) {
@@ -17,3 +17,5 @@ export default function twoSum(nums, target) {
 
   throw new Error('The given array of integers cannot add up to the target.');
 }
+
+export { twoSum as default };
