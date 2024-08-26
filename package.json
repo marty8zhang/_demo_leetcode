@@ -4,6 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "lint": "eslint \"src/**/*.js\" --fix",
     "test": "jest"
   },
   "author": "Marty Zhang <marty8zhang@gmail.com>",

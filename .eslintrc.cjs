@@ -1,4 +1,8 @@
-export default {
+/*
+ * It appears this file must be kept in the deprecated `.eslintrc.cjs` (and CommonJS) format in
+ * order for it to be picked up by both the CLI and the JetBrains IDE.
+ */
+module.exports = {
   env: {
     browser: true,
     es2021: true,
