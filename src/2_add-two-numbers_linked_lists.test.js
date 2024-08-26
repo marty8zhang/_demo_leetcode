@@ -1,4 +1,4 @@
-const { ListNode, addTwoNumbers } = require('./2_add-two-numbers_linked_lists');
+import {addTwoNumbers, ListNode} from './2_add-two-numbers_linked_lists.js';
 
 describe('addTwoNumbers()', () => {
   it('works with 3 digits calculation', () => {

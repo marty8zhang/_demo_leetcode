@@ -1,4 +1,4 @@
-function ListNode(val, next) {
+export function ListNode(val, next) {
   this.val = (val === undefined ? 0 : val);
   this.next = (next === undefined ? null : next);
 }
@@ -13,9 +13,10 @@ function ListNode(val, next) {
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2
+ * @param args
  * @return {ListNode}
  */
-const addTwoNumbers = function (l1, l2, ...args) {
+export const addTwoNumbers = function (l1, l2, ...args) {
   const [prevNode] = args;
   const sum = (l1?.val ?? 0) + (l2?.val ?? 0) + (prevNode?.next?.val ?? 0);
   const l1Next = l1?.next ?? null;
@@ -49,5 +50,3 @@ const addTwoNumbers = function (l1, l2, ...args) {
     return node;
   }
 };
-
-module.exports = { ListNode, addTwoNumbers };
